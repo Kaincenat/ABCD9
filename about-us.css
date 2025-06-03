@@ -1,0 +1,91 @@
+.about-us {
+  padding: 6rem 5% 5rem;
+  background-color: #161616;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 4.5rem;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.team-member {
+  background-color: #1e1e1e;
+  padding: 3rem 2.5rem;
+  border-radius: 2rem;
+  width: 340px;
+  text-align: center;
+  color: white;
+  border: 2px solid #e04c4c;
+  box-shadow: 0 0 20px rgba(224, 76, 76, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 30px rgba(224, 76, 76, 0.6);
+}
+
+.team-member img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #e04c4c;
+  box-shadow: 0 0 15px rgba(224, 76, 76, 0.4);
+  margin-bottom: 2rem;
+}
+
+.team-member:hover img {
+  box-shadow: 0 0 25px rgba(224, 76, 76, 0.8);
+}
+
+.team-member h3 {
+  font-size: 2.8rem;
+  margin-bottom: 0.6rem;
+  color: #ff4d4d;
+}
+
+.team-member .quote {
+  font-style: italic;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.team-member p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 90%;
+  }
+
+  .about-title {
+    font-size: 3.5rem;
+  }
+
+  .team-member h3 {
+    font-size: 2.4rem;
+  }
+
+  .team-member p,
+  .team-member .quote {
+    font-size: 1.5rem;
+  }
+}
